@@ -138,3 +138,22 @@ footer p {
 	}
 }
 
+
+@media screen and (max-width: 575px) {
+	:root {
+		--padding: 1.25rem;
+		--margin: 1.25rem;
+		--flex-direction: column;
+	}
+	main .content {
+		flex-direction: var(--flex-direction);
+	}
+
+	main .content article {
+		width: auto;
+	}
+	.navigation {
+		flex-direction: var(--flex-direction);
+	}
+}
+

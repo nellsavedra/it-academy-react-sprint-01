@@ -1,0 +1,129 @@
+* {
+	box-shadow: 0 0 1px red;
+}
+
+:root {
+	--padding: 0.75rem;
+	--margin: 0.75rem;
+	--container-background: black;
+	--margin-between-block: 1.5rem;
+	--flex-direction: row;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+#container {
+	max-width: 1200px;
+	padding: var(--padding);
+	margin: 0 auto;
+}
+
+header {
+	padding: var(--padding);
+	background-color: var(--container-background);
+	margin-bottom: var(--margin-between-block);
+}
+
+.navigation {
+	display: flex;
+	padding: var(--padding);
+	margin-bottom: calc(var(--margin) - 0.25rem);
+	background-color: navy;
+	gap: var(--padding);
+}
+
+.navigation > * {
+	background-color: salmon;
+	padding: var(--padding);
+}
+
+.navigation .logo {
+	flex-grow: 1;
+}
+
+.navigation .links {
+	flex-grow: 3;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+}
+
+.navigation .checkout {
+	flex-grow: 1;
+}
+
+.subtitle {
+	padding: var(--padding);
+	background-color: orange;
+}
+
+.subtitle p {
+	padding: var(--padding);
+	background-color: yellow;
+}
+
+main {
+	display: flex;
+	gap: var(--padding);
+	padding: var(--padding);
+	background-color: var(--container-background);
+	margin-bottom: var(--margin-between-block);
+	flex-direction: var(--flex-direction);
+}
+
+main .content {
+	padding: var(--padding);
+	flex-grow: 2;
+	background-color: grey;
+	display: inline-flex;
+	gap: var(--padding);
+	flex-wrap: wrap;
+}
+
+main .content article {
+	padding: var(--padding);
+	background-color: lightskyblue;
+	width: calc(50% - var(--padding) / 2);
+}
+
+main .content footer {
+	padding: var(--padding);
+	background-color: aquamarine;
+	flex-grow: 1;
+}
+
+main aside {
+	padding: var(--padding);
+	flex-grow: 1;
+	background-color: red;
+}
+
+main aside section {
+	padding: var(--padding);
+	margin-bottom: var(--padding);
+	background-color: gold;
+}
+
+main aside section:last-child {
+	margin: 0;
+}
+
+footer {
+	padding: var(--padding);
+	background-color: var(--container-background);
+}
+
+footer p {
+	padding: var(--padding);
+	background-color: gold;
+}
+
+

@@ -91,7 +91,7 @@ main .content {
 main .content article {
 	padding: var(--padding);
 	background-color: lightskyblue;
-	width: calc(50% - var(--padding) / 2);
+	flex: 1 0 calc(50% - var(--padding));
 }
 
 main .content footer {
@@ -148,10 +148,7 @@ footer p {
 	main .content {
 		flex-direction: var(--flex-direction);
 	}
-
-	main .content article {
-		width: auto;
-	}
+	
 	.navigation {
 		flex-direction: var(--flex-direction);
 	}
